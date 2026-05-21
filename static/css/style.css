@@ -1,0 +1,13 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.table th {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+code {
+    background-color: #f1f3f5;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    color: #d63384;
+}

@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}Login - ContábilSecure{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center mt-5">
+    <div class="col-md-4">
+        <div class="card border-0 shadow-lg rounded-3">
+            <div class="card-header bg-dark text-white text-center py-3">
+                <h4 class="mb-0 fw-bold">Acesso Restrito</h4>
+                <small class="text-muted">Identificação do Colaborador</small>
+            </div>
+            <div class="card-body p-4">
+                <form action="{{ url_for('login') }}" method="POST">
+                    <div class="mb-3">
+                        <label for="username" class="form-label fw-semibold">Usuário / Login</label>
+                        <input type="text" class="form-control" id="username" name="username" placeholder="Ex: joao.contabil" required autofocus>
+                    </div>
+                    <div class="mb-4">
+                        <label for="senha" class="form-label fw-semibold">Senha</label>
+                        <input type="password" class="form-control" id="senha" name="senha" placeholder="Sua senha privada" required>
+                    </div>
+                    <button type="submit" class="btn btn-dark w-100 py-2 fw-bold">Entrar no Sistema</button>
+                </form>
+            </div>
+            <div class="card-footer bg-light text-center py-2">
+                <span class="text-muted small">Proteção de dados em conformidade com a LGPD</span>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

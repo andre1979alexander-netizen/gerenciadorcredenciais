@@ -1,0 +1,21 @@
+# Cache do Python e arquivos temporários
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# BANCO DE DADOS (Super Importante não enviar para a nuvem!)
+instance/
+*.db
+*.sqlite
+
+# Ambientes virtuais (se você criar um)
+venv/
+.venv/
+env/
+
+# Arquivos de configuração do VS Code ou outros editores
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
